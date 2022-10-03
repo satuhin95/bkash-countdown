@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.absolute{
+    position: absolute;
+}
+.hidden{
+    display: none;
+}
+.wrapper{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    background: url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.slide_one{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+ .slide_one .element_0{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.slide_one .element_1{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.slide_one .element_2{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0 ;
+}
+.slide_one .element_3{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.slide_one .element_4{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+.slide_one .clockcircle{
+    width: 67px;
+    height: 67px;
+    top: 39px;
+    left: 38px; 
+}
+.slide_one .mainclock{
+    width: 90px;
+    height: 90px;
+    top: 32px;
+    left: 31px;
+}
+.slide_one .offertext1{
+    width: 48px;
+    height: 47px;
+    top: 37px;
+    left: 12px; 
+
+}
+.slide_one .yellow{
+    width: 103px;
+    height: 103px;
+    top: 18px;
+    left: 11px; 
+}
+.countdown{}
+
+.hoursText {
+    top: 177px;
+    left: 60px;
+    color: black;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.minutesText {
+    top: 177px;
+    left: 131px;
+    color: black;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.secondsText {
+    top: 177px;
+    left: 207px;
+    color: black;
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.slide_two{
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+.element_5{
+    width: 300px;
+    height: 250px;
+    top: 29px;
+    left: 0;
+}
+.element_6{
+    width: 300px;
+    height: 250px;
+    top: 29px;
+    left: 0;
+}
+.element_7{
+    width: 300px;
+    height: 250px;
+    top: 29px;
+    left: 0 ;
+}
+.element_8{
+    width: 300px;
+    height: 250px;
+    top: 29px;
+    left: 0;
+}
+.element_9{
+    width: 300px;
+    height: 250px;
+    top: 29px;
+    left: 0;
+}
+
+.clockcircle_one{
+    width: 67px;
+    height: 67px;
+    top: 68px;
+    left: 38px; 
+}
+.mainclock_one{
+    width: 90px;
+    height: 90px;
+    top: 61px;
+    left: 31px;
+}
+.offertext1_one{
+    width: 48px;
+    height: 47px;
+    top: 66px;
+    left: 12px; 
+
+}
+.yellow_one{
+    width: 103px;
+    height: 103px;
+    top: 47px;
+    left: 11px; 
+}
+.btn{
+   width: 167px;
+   height: 34px;
+   top: 201px;
+   left: 65px; 
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(.90); }
+    100% { transform: scale(1); }
+ }
+ 
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes offSpin {
+    to{
+      transform: rotate(90deg);
+    }
+ }
+ 
+ .round {
+     animation: offSpin .8s linear forwards;
+ }
+
+ @keyframes showZoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3)
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+
+.showZoomIn {
+    animation-name: showZoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+  /* @keyframes pulse {
+            0% {transform: scaleX(1)}
+            50% {transform: scale3d(.95, .95, .95)}
+            to {transform: scaleX(1)}
+        }
+  .pulse {animation-name: pulse;animation-duration: 2s;animation-iteration-count: infinite;} */
+ @keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    }
+         
+.bounceInLeft {
+
+animation-name: bounceInLeft;
+animation-duration: 1s;
+animation-fill-mode: both;
+}

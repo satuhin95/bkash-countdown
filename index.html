@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bkash Countdown Campaign by Purplepatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+         <div class="slide_one hidden">
+            <div class="element_0 absolute">
+                <img src="images/copybase.png"/>
+            </div>
+            <div class="element_1 absolute hidden showZoomIn">
+                <img src="images/text2.png"/>
+            </div>
+            <div class="element_2 absolute hidden showZoomIn">
+                <img src="images/25tk.png"/>
+            </div>
+            <div class="element_3 absolute hidden bounceInLeft">
+                <img src="images/text3.png"/>
+            </div>
+            <div class="yellow absolute">
+                <img src="images/clock/yellow.png"/>
+            </div>
+            <!-- round -->
+            <div class="clockcircle absolute round">
+                <img src="images/clock/clockcircle.png"/>
+            </div>
+            <div class="mainclock absolute  hidden ">
+                <img src="images/clock/mainclock.png"/>
+            </div>
+            <div class="offertext1 absolute hidden bounceInLeft">
+                <img src="images/clock/offertext1.png"/>
+            </div> 
+            <div class="element_4 absolute ">
+                <img src="images/countbase.png"/>
+            </div>
+
+        <div class="countdown absolute ">
+            <span id="hoursText" class="hoursText absolute">০০</span>
+            <span id="minutesText" class="minutesText absolute">০০</span>
+            <span id="secondsText" class="secondsText absolute">০০</span>
+        </div>
+    </div>
+    <div class="slide_two absolute hidden">
+        <div class="element_5 absolute">
+            <img src="images/copybase.png"/>
+        </div>
+        <div class="element_6 absolute hidden showZoomIn">
+            <img src="images/text2.png"/>
+        </div>
+        <div class="element_7 absolute hidden showZoomIn">
+            <img src="images/25tk.png"/>
+        </div>
+        <div class="element_8 absolute hidden bounceInLeft">
+            <img src="images/text3.png"/>
+        </div>
+        <div class="yellow_one absolute">
+            <img src="images/clock/yellow.png"/>
+        </div>
+        <!-- round -->
+        <div class="clockcircle_one absolute  round">
+            <img src="images/clock/clockcircle.png"/>
+        </div>
+        <div class="mainclock_one absolute  hidden ">
+            <img src="images/clock/mainclock.png"/>
+        </div>
+        <div class="offertext1_one absolute hidden bounceInLeft">
+            <img src="images/clock/offertext1.png"/>
+        </div> 
+        <div class="btn absolute pulse">
+            <img src="images/cta.png"/>
+        </div>
+    </div>    
+    </div>
+    <script>
+        let bindEvent = (eventNames, selector, handler) => {
+    eventNames.split(' ').forEach((eventName) => {
+      document.addEventListener(eventName, function (event) {
+        if (event.target.matches(selector + ', ' + selector + ' *')) {
+          handler.apply(event.target.closest(selector), arguments)
+        }
+      }, false);
+    })
+  };
+       /*add and remove class function*/
+      function remove_class(element, classname) {
+          element.className = element.className.replace(classname, '');
+      }
+
+      function add_class(element, classname) {
+          element.classList ? element.classList.add(classname) : element.className += (' ' + classname);
+      } 
+         let wrapper = document.querySelector('.wrapper');
+
+         wrapper.addEventListener('click',function(){
+            window.open("{CLICK_MACRO}");
+         })
+
+
+        let slide1 = document.querySelector('.slide_one')
+        let slide2 = document.querySelector('.slide_two')
+
+        let element_0 = document.querySelector('.element_0')
+        let element_1 = document.querySelector('.element_1')
+        let element_2 = document.querySelector('.element_2 ')
+        let element_3 = document.querySelector('.element_3 ')
+        let yellow = document.querySelector('.yellow ')
+        let clockcircle = document.querySelector('.clockcircle ')
+        let mainclock = document.querySelector('.mainclock ')
+        let offertext1 = document.querySelector('.offertext1 ')
+
+        let element_5 = document.querySelector('.element_5')
+        let element_6 = document.querySelector('.element_6')
+        let element_7 = document.querySelector('.element_7 ')
+        let element_8 = document.querySelector('.element_8 ')
+        let yellow_one = document.querySelector('.yellow_one ')
+        let clockcircle_one = document.querySelector('.clockcircle_one ')
+        let mainclock_one = document.querySelector('.mainclock_one ')
+        let offertext1_one = document.querySelector('.offertext1_one ')
+
+
+
+      slide();
+      function slide(){
+        remove_class(offertext1, 'hidden')
+        setTimeout(function(){
+            remove_class(element_2, 'hidden')
+        setTimeout(function(){
+            add_class(clockcircle, 'hidden')
+            remove_class(mainclock, 'hidden')
+            remove_class(element_1,'hidden')
+            remove_class(element_3, 'hidden')
+            setTimeout(function(){
+                add_class(offertext1,'hidden')
+                add_class(mainclock,'hidden')
+                add_class(element_2,'hidden')
+                add_class(element_3,'hidden')
+                add_class(element_1,'hidden')
+                setTimeout(function(){
+                    remove_class(offertext1, 'hidden')
+                    remove_class(clockcircle, 'hidden')
+                    setTimeout(function(){
+                        remove_class(element_2, 'hidden')
+                    setTimeout(function(){
+                        remove_class(element_1,'hidden')
+                        add_class(clockcircle, 'hidden')
+                        remove_class(mainclock, 'hidden')
+                        
+                        remove_class(element_3, 'hidden')
+                        setTimeout(slide, 3000)
+                    },800)
+                },700)
+                },100)
+            },3000)
+
+        },800)
+    },700)
+       
+    }
+
+  
+    second_slide();
+
+    function second_slide(){
+        remove_class(offertext1_one, 'hidden')
+        
+        setTimeout(function(){
+            remove_class(element_7, 'hidden')
+            setTimeout(function(){
+            add_class(clockcircle_one, 'hidden')
+            remove_class(mainclock_one, 'hidden')
+            remove_class(element_6,'hidden')
+            
+            remove_class(element_8, 'hidden')
+            setTimeout(function(){
+                add_class(offertext1_one,'hidden')
+                add_class(mainclock_one,'hidden')
+                add_class(element_7,'hidden')
+                add_class(element_8,'hidden')
+                add_class(element_6,'hidden')
+                setTimeout(function(){
+                    remove_class(offertext1_one, 'hidden')
+                    remove_class(clockcircle_one, 'hidden')
+                    setTimeout(function(){
+                        remove_class(element_7, 'hidden')
+                    setTimeout(function(){
+                        remove_class(element_6,'hidden')
+                        add_class(clockcircle_one, 'hidden')
+                        remove_class(mainclock_one, 'hidden')
+                        remove_class(offertext1_one, 'hidden')
+                        
+                        remove_class(element_8, 'hidden')
+                        setTimeout(second_slide, 3000)
+                    },800)
+                },700)
+                },100)
+            },3000)
+
+        },800)
+    },700)
+    }
+
+       
+
+
+ const hoursText = document.querySelector('.hoursText');
+const minutesText = document.querySelector('.minutesText');
+const secondsText = document.querySelector('.secondsText');
+
+
+
+
+checkingHour = 15;
+banglaArr = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+dateCalculation();
+setInterval(dateCalculation, 1000);
+
+
+function dateCalculation() {
+    const d = new Date();
+    let hours = d.getHours();
+    let minutes = d.getMinutes();
+    let seconds = d.getSeconds();
+    var offset = d.getTimezoneOffset();
+    console.log(hours,minutes,seconds,offset);
+    if (checkingHour == hours) {
+        slide_two();
+    } else {
+        slide_one();
+        checkRemainingTime(hours, minutes, seconds);
+    }
+}
+
+
+
+
+function checkRemainingTime(hours, minutes, seconds) {
+
+    remainingSeconds = seconds == 0 ? 0 : 60 - seconds;
+    if (remainingSeconds == 0) {
+        if (minutes == 0) {
+            remainingMinutes = 0;
+        }
+        else {
+            remainingMinutes = 60 - minutes;
+        }
+    } else { remainingMinutes = (60 - 1) - minutes }``
+
+    calcRemainingHours = () => {
+        if (hours < checkingHour) {
+            return remainingMinutes == 0 && minutes == 0 ? checkingHour - hours : (checkingHour - 1) - hours;
+        } else {
+            return remainingMinutes == 0 && minutes == 0 ? checkingHour + (24 - hours) : (checkingHour - 1) + (24 - hours);
+        }
+    }
+    remainingHours = calcRemainingHours();
+    secondsText.innerHTML = transformToBangla(remainingSeconds);
+    minutesText.innerHTML = transformToBangla(remainingMinutes);
+    hoursText.innerHTML = transformToBangla(remainingHours);
+
+
+}
+
+
+function transformToBangla(num) {
+    if (num < 10) {
+        return '০' + banglaArr[num];
+    }
+    else {
+        firstVar = Math.floor(num / 10);
+        return banglaArr[firstVar] + banglaArr[num % 10];
+    }
+}
+
+
+function slide_two() {
+    hoursText.classList.add('hidden');
+    minutesText.classList.add('hidden');
+    secondsText.classList.add('hidden');
+    slide1.classList.add('hidden')
+    slide2.classList.remove('hidden')
+
+          
+
+}
+
+function slide_one() {
+    hoursText.classList.remove('hidden');
+    minutesText.classList.remove('hidden');
+    secondsText.classList.remove('hidden');
+
+    slide1.classList.remove('hidden')
+    slide2.classList.add('hidden')
+
+    
+
+
+
+}
+
+
+
+    
+
+    </script>
+    
+</body>
+</html>
